@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06AE4FAC-208C-42D5-A460-9DBF951D728C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Logic</RootNamespace>
+    <AssemblyName>Logic</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conclusion.cs" />
+    <Compile Include="ConclusionTypes\BehaviourContracts\IConclusionType.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\AdContradiction\aAnE.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\AdContradiction\AdContradictionType.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\AdContradiction\AdContradictionTypes.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\AdContradiction\AdSubordinatam.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\AdContradiction\AdSubordinatem.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\AdContradiction\BehaviourContracts\IAdContradictionType.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\AdContradiction\EmptyType.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\AdContradiction\nAaO_nEaI.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\AdContradiction\nIaO.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\BehaviourContracts\IDirectConclusionType.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\Contradistinction.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\Conversion.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\DirectConclusion.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\DirectConclusionType.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\DirectConclusionTypes.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\EmptyType.cs" />
+    <Compile Include="ConclusionTypes\DirectConclusion\Obversion.cs" />
+    <Compile Include="ConclusionTypes\EmptyType.cs" />
+    <Compile Include="Copula.cs" />
+    <Compile Include="Definition.cs" />
+    <Compile Include="DefinitionSubstitutes\Characteristic.cs" />
+    <Compile Include="DefinitionSubstitutes\Comparison.cs" />
+    <Compile Include="DefinitionSubstitutes\Denotation.cs" />
+    <Compile Include="DefinitionSubstitutes\Description.cs" />
+    <Compile Include="DefinitionSubstitutes\Differention.cs" />
+    <Compile Include="Division.cs" />
+    <Compile Include="Feature.cs" />
+    <Compile Include="FeatureTypes\AccidentsFeature.cs" />
+    <Compile Include="FeatureTypes\GenusFeature.cs" />
+    <Compile Include="FeatureTypes\KindDifferenceFeature.cs" />
+    <Compile Include="FeatureTypes\KindFeature.cs" />
+    <Compile Include="FeatureTypes\PropriumFeature.cs" />
+    <Compile Include="Infrastructure\DefinitionState.cs" />
+    <Compile Include="Infrastructure\DefinitionStateFabric.cs" />
+    <Compile Include="Infrastructure\JudgementFabric.cs" />
+    <Compile Include="Infrastructure\JudgementsRelationResult.cs" />
+    <Compile Include="Judgement.cs" />
+    <Compile Include="JudgementForms\ApproachForm\Analytical.cs" />
+    <Compile Include="JudgementForms\ApproachForm\ApproachForm.cs" />
+    <Compile Include="JudgementForms\ApproachForm\ApproachForms.cs" />
+    <Compile Include="JudgementForms\ApproachForm\BehaviourContracts\IApprochForm.cs" />
+    <Compile Include="JudgementForms\ApproachForm\Syntetical.cs" />
+    <Compile Include="JudgementForms\BehaviourContratcs\IJudgementForm.cs" />
+    <Compile Include="JudgementForms\EmptyForm.cs" />
+    <Compile Include="JudgementForms\ExistanceForm\BehaviourContracts\IExistanceForm.cs" />
+    <Compile Include="JudgementForms\ExistanceForm\EmptyForm.cs" />
+    <Compile Include="JudgementForms\ExistanceForm\Existance.cs" />
+    <Compile Include="JudgementForms\ExistanceForm\ExistanceForm.cs" />
+    <Compile Include="JudgementForms\ExistanceForm\ExistanceForms.cs" />
+    <Compile Include="JudgementForms\PredicateForm\BehaviourContracts\IPredicateForm.cs" />
+    <Compile Include="JudgementForms\PredicateForm\Descriptive.cs" />
+    <Compile Include="JudgementForms\PredicateForm\EmptyForm.cs" />
+    <Compile Include="JudgementForms\PredicateForm\Explanatory.cs" />
+    <Compile Include="JudgementForms\PredicateForm\Narrative.cs" />
+    <Compile Include="JudgementForms\PredicateForm\PredicateForm.cs" />
+    <Compile Include="JudgementForms\PredicateForm\PredicateForms.cs" />
+    <Compile Include="JudgementForms\SubjectForm\BehaviourContracts\ISubjectForm.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Defined\BehaviourContracts\IDefinedForm.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Defined\DefinedForm.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Defined\DefinedForms.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Defined\EmptyForm.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Defined\General.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Defined\Individual.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Defined\Partial.cs" />
+    <Compile Include="JudgementForms\SubjectForm\EmptyForm.cs" />
+    <Compile Include="JudgementForms\SubjectForm\SubjectForm.cs" />
+    <Compile Include="JudgementForms\SubjectForm\SubjectForms.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Undefined\BehaviourContracts\IUndefinedForm.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Undefined\EmptyForm.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Undefined\Impersonal.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Undefined\UndefinedForm.cs" />
+    <Compile Include="JudgementForms\SubjectForm\Undefined\UndefinedForms.cs" />
+    <Compile Include="JudgementForms\SubjectPredicateRelationForm\BehaviourContracts\ISubjectPredicateRelationForm.cs" />
+    <Compile Include="JudgementForms\SubjectPredicateRelationForm\EmptyForm.cs" />
+    <Compile Include="JudgementForms\SubjectPredicateRelationForm\Equality.cs" />
+    <Compile Include="JudgementForms\SubjectPredicateRelationForm\Relation.cs" />
+    <Compile Include="JudgementForms\SubjectPredicateRelationForm\SubjectPredicateRelationForm.cs" />
+    <Compile Include="JudgementForms\SubjectPredicateRelationForm\SubjectPredicateRelationForms.cs" />
+    <Compile Include="JudgementForms\SubjectPredicateRelationForm\Submission.cs" />
+    <Compile Include="JudgementParts\Predicate.cs" />
+    <Compile Include="JudgementParts\Subject.cs" />
+    <Compile Include="JudgementTypes\BehaviourContracts\IJudgementType.cs" />
+    <Compile Include="JudgementTypes\EmptyType.cs" />
+    <Compile Include="JudgementTypes\ModalityType\Appodictique.cs" />
+    <Compile Include="JudgementTypes\ModalityType\Assertotique.cs" />
+    <Compile Include="JudgementTypes\ModalityType\BehaviourContracts\IModalityType.cs" />
+    <Compile Include="JudgementTypes\ModalityType\EmptyType.cs" />
+    <Compile Include="JudgementTypes\ModalityType\ModalityType.cs" />
+    <Compile Include="JudgementTypes\ModalityType\ModalityTypes.cs" />
+    <Compile Include="JudgementTypes\ModalityType\Problematique.cs" />
+    <Compile Include="JudgementTypes\QualityType\Affirmative.cs" />
+    <Compile Include="JudgementTypes\QualityType\BehaviourContracts\IQualityType.cs" />
+    <Compile Include="JudgementTypes\QualityType\EmptyType.cs" />
+    <Compile Include="JudgementTypes\QualityType\Negative.cs" />
+    <Compile Include="JudgementTypes\QualityType\QualityType.cs" />
+    <Compile Include="JudgementTypes\QualityType\QualityTypes.cs" />
+    <Compile Include="JudgementTypes\QuantityType\BehaviourContracts\IQuantityType.cs" />
+    <Compile Include="JudgementTypes\QuantityType\EmptyType.cs" />
+    <Compile Include="JudgementTypes\QuantityType\General.cs" />
+    <Compile Include="JudgementTypes\QuantityType\Individual.cs" />
+    <Compile Include="JudgementTypes\QuantityType\Partial.cs" />
+    <Compile Include="JudgementTypes\QuantityType\QuantityType.cs" />
+    <Compile Include="JudgementTypes\QuantityType\QuantityTypes.cs" />
+    <Compile Include="JudgementTypes\RelationType\BehaviourContracts\IRelationType.cs" />
+    <Compile Include="JudgementTypes\RelationType\Categorical.cs" />
+    <Compile Include="JudgementTypes\RelationType\Conditional.cs" />
+    <Compile Include="JudgementTypes\RelationType\EmptyType.cs" />
+    <Compile Include="JudgementTypes\RelationType\RelationType.cs" />
+    <Compile Include="JudgementTypes\RelationType\RelationTypes.cs" />
+    <Compile Include="JudgementTypes\RelationType\Separative.cs" />
+    <Compile Include="LogicalCategories\AristotelCategoris\ActioAttribute.cs" />
+    <Compile Include="LogicalCategories\AristotelCategoris\HabitusAttribute.cs" />
+    <Compile Include="LogicalCategories\AristotelCategoris\PassioAttribute.cs" />
+    <Compile Include="LogicalCategories\AristotelCategoris\QualitasAttribute.cs" />
+    <Compile Include="LogicalCategories\AristotelCategoris\QuandoAttribute.cs" />
+    <Compile Include="LogicalCategories\AristotelCategoris\QuantitasAttribute.cs" />
+    <Compile Include="LogicalCategories\AristotelCategoris\RelatioAttribute.cs" />
+    <Compile Include="LogicalCategories\AristotelCategoris\SitusAttribute.cs" />
+    <Compile Include="LogicalCategories\AristotelCategoris\SubstantiaAttribute.cs" />
+    <Compile Include="LogicalCategories\AristotelCategoris\UbiAttribute.cs" />
+    <Compile Include="LogicalCategories\ModernCategories\ItemAttribute.cs" />
+    <Compile Include="LogicalCategories\ModernCategories\PropertyAttribute.cs" />
+    <Compile Include="LogicalCategories\ModernCategories\RelationAttribute.cs" />
+    <Compile Include="LogicalSquare\ContradictionRelation.cs" />
+    <Compile Include="LogicalSquare\ContraryRelation.cs" />
+    <Compile Include="LogicalSquare\LogicalSquareRelation.cs" />
+    <Compile Include="LogicalSquare\SubcontraryRelation.cs" />
+    <Compile Include="LogicalSquare\SubordinationRelation.cs" />
+    <Compile Include="Notion.cs" />
+    <Compile Include="NotionRelation.cs" />
+    <Compile Include="NotionTypes\AbsoluteNotion.cs" />
+    <Compile Include="NotionTypes\AbstractNotion.cs" />
+    <Compile Include="NotionTypes\CollectiveNotion.cs" />
+    <Compile Include="NotionTypes\CommonNotion.cs" />
+    <Compile Include="NotionTypes\ConcreteNotion.cs" />
+    <Compile Include="NotionTypes\DefinitionParts\Definiendum.cs" />
+    <Compile Include="NotionTypes\DefinitionParts\Definies.cs" />
+    <Compile Include="NotionTypes\DivisionParts\Divident.cs" />
+    <Compile Include="NotionTypes\DivisionParts\Members.cs" />
+    <Compile Include="NotionTypes\NegativeNotion.cs" />
+    <Compile Include="NotionTypes\PositiveNotion.cs" />
+    <Compile Include="NotionTypes\RelativeNotion.cs" />
+    <Compile Include="NotionTypes\SeparativeNotion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subdivision.cs" />
+    <Compile Include="Thinking.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
